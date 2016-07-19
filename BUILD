@@ -10,3 +10,10 @@ cc_binary(
     srcs=['main.cpp'],
     deps=[':mylib'],
 )
+
+cc_test(
+    name='mytest',
+    srcs=['test.cpp'],
+    deps=['mylib', '@gtest//:main'],
+)
+
