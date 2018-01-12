@@ -15,6 +15,6 @@ cc_test(
     srcs = ["test.cpp"],
     deps = [
         "mylib",
-        "@gtest//:main",
+        "@com_google_googletest//:gtest_main",
     ],
 )
